@@ -2,13 +2,78 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
-  <title>モビルスーツ プライバシーポリシー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>アプリ一覧｜プライバシーポリシー</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Noto Sans JP", sans-serif;
+      background: #0b0b0c;
+      color: #f4f6f8;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background: #141416;
+      border: 1px solid #22252a;
+      border-radius: 16px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    }
+    .card h2 {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+    .card p {
+      color: #a8b0b9;
+      font-size: 14px;
+      margin: 0;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #a8b0b9;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>アプリ一覧</h1>
-  <ul>
-    <li><a href="apps/brake-tester/">ブレーキテスター計算Pro</a></li>
-    <li><a href="apps/nantokaku-brake/">制動力おおよそ計算EX</a></li>
-  </ul>
+  <div class="container">
+    <h1>アプリ一覧（プライバシーポリシー）</h1>
+    <div class="grid">
+      <a href="./brake-tester/" class="card">
+        <h2>ブレーキテスター計算Pro</h2>
+        <p>ブレーキテスター計算用ユーティリティアプリ</p>
+      </a>
+      <a href="./nantokaku-brake/" class="card">
+        <h2>制動力おおよそ計算EX</h2>
+        <p>車両の制動力を概算するシンプル計算ツール</p>
+      </a>
+    </div>
+    <footer>
+      &copy; 2025 zaku-ms06. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
